@@ -1,0 +1,168 @@
+* {
+    font-family: ourfont;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+a:any-link    {
+  /* Applies to all unvisited links */
+  text-decoration:none;
+  font-weight:bold;
+  color:white;
+  } 
+
+@font-face {
+    font-family:ourfont;
+    src: url('../production files/HelveticaNeue-CondensedBold.ttf')
+}
+
+
+body {
+    background-color: #D5E3E7;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display:flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-content: center;
+}
+
+header {
+    color: #434343;
+    font-size: 72px;
+    text-align: center;
+    font: Arial;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #434343;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    
+}
+
+.header img {
+    height: 100px;
+    margin-left: 10px;
+    background-color: #434343;
+}
+
+.header ul {
+    margin-right: 20px;
+    background-color: #434343;
+    margin-top: 100px;
+}
+
+.header li {
+    display: inline-block;
+    margin: auto 10px;
+}
+
+.storerow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between; 
+    margin-top: 100px;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.storecolumn {
+    flex: 25%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.about {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.about img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.abouttext {
+    width: 40%;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 27%;
+    padding: 40px;
+}
+
+.abouttext ul {
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.abouttext p {
+    margin-top: 40px;
+}
+
+p {
+    font-family: sans-serif;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+#booking {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px;
+    max-width: 20%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 100px;
+    text-overflow: inherit;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact ul {
+     margin-top: 50px;
+}
+
+.white {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+}
+
+
+
+
