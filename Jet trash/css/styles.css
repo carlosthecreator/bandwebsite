@@ -1,0 +1,395 @@
+* {
+    font-family: ourfont;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+a:any-link    {
+  /* Applies to all unvisited links */
+  text-decoration:none;
+  font-weight:bold;
+  color:white;
+  } 
+
+@font-face {
+    font-family:ourfont;
+    src: url('../production files/HelveticaNeue-CondensedBold.ttf')
+}
+
+
+body {
+    background-color: #D5E3E7;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display:flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-content: center;
+}
+
+header {
+    color: #434343;
+    font-size: 72px;
+    text-align: center;
+    font: Arial;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #434343;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    position: fixed;
+    
+}
+
+.header img {
+    height: 100px;
+    margin-left: 10px;
+    background-color: #434343;
+}
+
+.header ul {
+    margin-right: 20px;
+    background-color: #434343;
+    margin-top: 100px;
+}
+
+.header li {
+    display: inline-block;
+    margin: auto 10px;
+}
+
+.storerow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between; 
+    margin-top: 50px;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.storecolumn {
+    flex: 25%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.about {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.about img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.abouttext {
+    width: 40%;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 27%;
+    padding: 40px;
+}
+
+.abouttext ul {
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.abouttext p {
+    margin-top: 40px;
+}
+
+p {
+    font-family: sans-serif;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+#booking {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px;
+    max-width: 20%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 100px;
+    text-overflow: inherit;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact ul {
+     margin-top: 50px;
+}
+
+.white {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+}
+
+
+/*carlos*/
+#mission{
+    background-image: url("/images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto auto;
+    vertical-align: center;
+    justify-content: space-between;
+}
+.mainNav {
+			  overflow: hidden;
+			  background-color: black;
+			  position: fixed;
+			  top: 0; 
+			  width: 100%; 
+			  z-index: 100;
+			  transition: top 3s;
+			  list-style: none;
+			  text-align: center;
+			}
+
+			.mainNav a {
+			  color: #ffffff;
+			  padding: 18px 20px;
+			  text-decoration: none;
+			  font-size: 20px;
+			  display: inline-block;
+			}
+
+
+			.mainNav a:hover {
+			  background-color: tomato;
+			}
+
+
+			.mainNav .icon {
+			  display: none;
+			} 
+
+			.logo {
+				float: left;
+			}
+
+			@media screen and (max-width: 600px) {
+			  .mainNav a {display: none;}
+			  .mainNav a.icon {
+			    float: right;
+			    display: block;
+			  }
+			  .logo {
+			  	float: left;
+			  }
+
+			}
+
+			@media screen and (max-width: 600px) {
+			  .mainNav.responsive {position: relative;}
+			  .mainNav.responsive .icon {
+			    position: absolute;
+			    right: 0;
+			    top: 0; 
+			  }
+			  .mainNav.responsive a {
+			    float: none;
+			    display: block;
+			    text-align: center;
+			  }
+
+			  .mainNav.responsive .logo {
+			  	float: none;
+			  }
+			}
+.col-1 {width: 100%;}
+/*#feature, article {
+	height: 750px;
+	margin-bottom: 230px;
+	background-color: #efefef;*/
+
+
+}
+.play {
+width: 60%;
+    margin-left: 50%;
+    margin-top: 50px;
+}
+
+.musicicons{
+    /*display: flex;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: center;
+    
+    margin-top: 100px;
+    max-width: 50%;
+    margin-left: 31%; display: flex;
+    
+    width: 50%;
+    
+    
+    align-items: center;
+    /*text-align: center;*/
+
+}
+
+
+
+.musiccolumn {
+    flex: 25%;
+    max-width: 30%;
+    padding: 0 1px;
+    grid-row: center;
+}
+
+.container {
+  display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.home img{
+ width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.bgimg-2 {
+  background-image: url("/images/header.png");
+  min-height: 400px;
+        
+    opacity: 1;
+    //background-position: center;
+    //padding-top: 300px;
+    flex: auto;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    //height: 300px;
+    
+}
+.music{
+    margin-left: 25%;
+    width: 50%;
+    align-content: center;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FC6852;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    
+}
+
+.header2 img {
+    height: 150px;
+    margin-left: 10px;
+    /*background-color: #434343;*/
+}
+
+.header2 ul {
+    margin-right: 20px;
+    background-color: #FC6852;
+    margin-top: 60px;
+}
+
+.header2 li {
+    display: inline-block;
+    margin: auto 10px;
+}
+
+
+.ticketrow{
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between; 
+    margin-top: 20px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+
+.musicrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 50%;
+    /*position: relative;*/
+    justify-content: space-between; 
+    margin-top: 50px;
+    max-width: 50%;
+    margin-left: 25%;
+    width: 50%;
+}
+.moremusic{
+    margin-left: 41%;
+    width: 50%;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.socialrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    
+    margin-top: 2px;
+    max-width: 100%px;
+    
+    margin-bottom: 10px;
+flex: 50%;
+    max-width: 100%;
+    padding: 0 4px;
+}
